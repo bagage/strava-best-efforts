@@ -9,16 +9,16 @@ module StravaBestEfforts
         if activity_json['best_efforts'].nil?
           $logger.debug("This activity doesn't contain any best effort items.")
           return
-        end  
+        end
 
         activity_json['best_efforts'].reduce([]) do |acc, best_effort|
           pr_rank = best_effort['pr_rank']
-          if pr_rank.nil?
-            $logger.debug("This activity doesn't contain best effort for '#{best_effort['name']}'.")
-          else
-            if pr_rank > maximum_pr_rank
-              $logger.info("Ignoring best effort item found. PR Rank: #{pr_rank}, Maximum Allowed Rank: #{maximum_pr_rank}.")
-            else
+          # if pr_rank.nil?
+          #   $logger.debug("This activity doesn't contain best effort for '#{best_effort['name']}'.")
+          # else
+          #   if pr_rank > maximum_pr_rank
+          #     $logger.info("Ignoring best effort item found. PR Rank: #{pr_rank}, Maximum Allowed Rank: #{maximum_pr_rank}.")
+          #   else
               activity_id = activity_json['id']
               activity_name = activity_json['name']
               $logger.info("Best effort found. PR Rank: #{pr_rank} - Activity: #{activity_id} - '#{activity_name}'.")
@@ -61,8 +61,8 @@ module StravaBestEfforts
               best_effort_model['start_date'] = best_effort['start_date_local']
 
               acc << best_effort_model
-            end
-          end
+            # end
+          # end
           acc
         end
       end

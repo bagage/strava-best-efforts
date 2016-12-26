@@ -123,7 +123,7 @@ function createMainContent(distancesToShow, maxItemsAllowed, isOverview) {
     allDistances.forEach(function(distance) {
       var bestEffortsForThisDistance = [];
       bestEffortsJsonData.forEach(function(bestEffort) {
-        if (bestEffort['name'] === distance && bestEffort['pr_rank'] === 1) {
+        if (bestEffort['name'] === distance/* && bestEffort['pr_rank'] === 1*/) {
           bestEffortsForThisDistance.push(bestEffort);
         }
       });
