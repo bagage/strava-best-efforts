@@ -18,7 +18,7 @@
   <!-- Theme style -->
   <link href="assets/AdminLTE/dist/css/AdminLTE.min.css" rel="stylesheet">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
+  folder instead of downloading all of them to reduce the load. -->
   <link href="assets/AdminLTE/dist/css/skins/skin-black-light.min.css" rel="stylesheet">
   <!-- Pace style -->
   <link href="assets/AdminLTE/plugins/pace/pace.min.css" rel="stylesheet">
@@ -122,8 +122,20 @@
 
             <ul class="treeview-menu">
               <li>
+                <a id="best-effort-50k" data-distance-text="50k" data-distance-name="50k" href="#">
+                  <i class="fa fa-circle-o"></i>50k
+                </a>
+              </li>
+              <li>
                 <a id="best-effort-marathon" data-distance-text="Marathon" data-distance-name="Marathon" href="#">
                   <i class="fa fa-circle-o"></i>Marathon
+                </a>
+              </li>
+
+
+              <li>
+                <a id="best-effort-30k" data-distance-text="30k" data-distance-name="30k" href="#">
+                  <i class="fa fa-circle-o"></i>30k
                 </a>
               </li>
 
@@ -134,6 +146,25 @@
               </li>
 
               <li>
+                <a id="best-effort-20k" data-distance-text="20k" data-distance-name="20k" href="#">
+                  <i class="fa fa-circle-o"></i>20k
+                </a>
+              </li>
+
+              <li>
+                <a id="best-effort-10-mile" data-distance-text="10 mile" data-distance-name="10 mile" href="#">
+                  <i class="fa fa-circle-o"></i>10 mile
+                </a>
+              </li>
+
+              <li>
+                <a id="best-effort-15k" data-distance-text="15k" data-distance-name="15k" href="#">
+                  <i class="fa fa-circle-o"></i>15k
+                </a>
+              </li>
+
+
+              <li>
                 <a id="best-effort-10k" data-distance-text="10k" data-distance-name="10k" href="#">
                   <i class="fa fa-circle-o"></i>10k
                 </a>
@@ -142,6 +173,12 @@
               <li>
                 <a id="best-effort-5k" data-distance-text="5k" data-distance-name="5k" href="#">
                   <i class="fa fa-circle-o"></i>5k
+                </a>
+              </li>
+
+              <li>
+                <a id="best-effort-2-mile" data-distance-text="2 mile" data-distance-name="2 mile" href="#">
+                  <i class="fa fa-circle-o"></i>2 mile
                 </a>
               </li>
 
@@ -157,166 +194,119 @@
                 </a>
               </li>
 
+
               <li>
-                <a href="#">
-                  <i class="fa fa-circle-o"></i>Other Distances
-                  <span class="pull-right-container">
-                    <i class="fa fa-angle-left pull-right"></i>
-                  </span>
+                <a id="best-effort-1-2-mile" data-distance-text="1/2 mile" data-distance-name="1/2 mile" href="#">
+                  <i class="fa fa-circle-o"></i>1/2 mile
                 </a>
-
-                <ul class="treeview-menu">
-                  <li>
-                    <a id="best-effort-50k" data-distance-text="50k" data-distance-name="50k" href="#">
-                      <i class="fa fa-circle-o"></i>50k
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-30k" data-distance-text="30k" data-distance-name="30k" href="#">
-                      <i class="fa fa-circle-o"></i>30k
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-20k" data-distance-text="20k" data-distance-name="20k" href="#">
-                      <i class="fa fa-circle-o"></i>20k
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-10-mile" data-distance-text="10 mile" data-distance-name="10 mile" href="#">
-                      <i class="fa fa-circle-o"></i>10 mile
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-15k" data-distance-text="15k" data-distance-name="15k" href="#">
-                      <i class="fa fa-circle-o"></i>15k
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-2-mile" data-distance-text="2 mile" data-distance-name="2 mile" href="#">
-                      <i class="fa fa-circle-o"></i>2 mile
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-1-2-mile" data-distance-text="1/2 mile" data-distance-name="1/2 mile" href="#">
-                      <i class="fa fa-circle-o"></i>1/2 mile
-                    </a>
-                  </li>
-
-                  <li>
-                    <a id="best-effort-400m" data-distance-text="400m" data-distance-name="400m" href="#">
-                      <i class="fa fa-circle-o"></i>400m
-                    </a>
-                  </li>
-                </ul>
               </li>
-            </ul>
-          </li>
-        </ul>
-      </section><!-- /.sidebar -->
-    </aside>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <h1>Overview</h1>
-        <ol class="breadcrumb">
-          <li>
-            <a class="reload-app" href="#"><i class="fa fa-dashboard"></i> Strava Best Efforts</a>
-          </li>
-          <li class="active">Overview</li>
-        </ol>
-      </section>
+              <li>
+                <a id="best-effort-400m" data-distance-text="400m" data-distance-name="400m" href="#">
+                  <i class="fa fa-circle-o"></i>400m
+                </a>
+              </li>
+            </li>
+          </ul>
+        </section><!-- /.sidebar -->
+      </aside>
 
-      <!-- Main content -->
-      <section class="content" id="main-content">
-      </section>
-    </div><!-- /.content-wrapper -->
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>Overview</h1>
+          <ol class="breadcrumb">
+            <li>
+              <a class="reload-app" href="#"><i class="fa fa-dashboard"></i> Strava Best Efforts</a>
+            </li>
+            <li class="active">Overview</li>
+          </ol>
+        </section>
 
-    <footer class="main-footer">
-      <div class="pull-right hidden-xs">
-        <strong>Theme based on
-          <a href="https://github.com/almasaeed2010/AdminLTE">AdminLTE</a>.
-          <small>Version 2.3.6</small>
+        <!-- Main content -->
+        <section class="content" id="main-content">
+        </section>
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <strong>Theme based on
+            <a href="https://github.com/almasaeed2010/AdminLTE">AdminLTE</a>.
+            <small>Version 2.3.6</small>
+          </strong>
+        </div>
+        <strong>
+          Developed by <a href="http://yizeng.me" target="_blank">Yi Zeng</a>.
+          GitHub'ed at <a href="https://github.com/yizeng/strava-best-efforts" target="_blank">yizeng/strava-best-efforts.</a>
         </strong>
-      </div>
-      <strong>
-        Developed by <a href="http://yizeng.me" target="_blank">Yi Zeng</a>.
-        GitHub'ed at <a href="https://github.com/yizeng/strava-best-efforts" target="_blank">yizeng/strava-best-efforts.</a>
-      </strong>
-    </footer>
+      </footer>
 
-  </div><!-- ./wrapper -->
+    </div><!-- ./wrapper -->
 
-  <!-- jQuery 2.2.3 -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="assets/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"><\/script>')</script>
+    <!-- jQuery 2.2.3 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js"><\/script>')</script>
 
-  <!-- Bootstrap 3.3.6 -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script>$.fn.modal || document.write('<script src="assets/AdminLTE/bootstrap/js/bootstrap.min.js"><\/script>')</script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>$.fn.modal || document.write('<script src="assets/AdminLTE/bootstrap/js/bootstrap.min.js"><\/script>')</script>
 
-  <!-- DataTables 1.10.7 -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
-  <script>window.jQuery.fn.dataTable || document.write('<script src="assets/AdminLTE/plugins/datatables/jquery.dataTables.min.js"><\/script>')</script>
+    <!-- DataTables 1.10.7 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script>window.jQuery.fn.dataTable || document.write('<script src="assets/AdminLTE/plugins/datatables/jquery.dataTables.min.js"><\/script>')</script>
 
-  <!-- DataTables Bootstrap -->
-  <script src="assets/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
+    <!-- DataTables Bootstrap -->
+    <script src="assets/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js"></script>
 
-  <!-- ChartJS 2.2.2 and Moment.js 2.14.1 -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
-  <script>window.moment || document.write('<script src="assets/js/moment.min.js"><\/script>')</script>
+    <!-- ChartJS 2.2.2 and Moment.js 2.14.1 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script>window.moment || document.write('<script src="assets/js/moment.min.js"><\/script>')</script>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
-  <script>window.Chart || document.write('<script src="assets/js/Chart.min.js"><\/script>')</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+    <script>window.Chart || document.write('<script src="assets/js/Chart.min.js"><\/script>')</script>
 
-  <!-- FastClick -->
-  <script src="assets/AdminLTE/plugins/fastclick/fastclick.min.js"></script>
+    <!-- FastClick -->
+    <script src="assets/AdminLTE/plugins/fastclick/fastclick.min.js"></script>
 
-  <!-- PACE 1.0.2 -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
-  <script>window.Pace || document.write('<script src="assets/AdminLTE/plugins/pace/pace.min.js"><\/script>')</script>
+    <!-- PACE 1.0.2 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <script>window.Pace || document.write('<script src="assets/AdminLTE/plugins/pace/pace.min.js"><\/script>')</script>
 
-  <!-- Slimscroll -->
-  <script src="assets/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="assets/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 
-  <!-- AdminLTE App -->
-  <script src="assets/AdminLTE/dist/js/app.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/AdminLTE/dist/js/app.min.js"></script>
 
-  <!-- Strava Best Efforts App -->
-  <script src="assets/js/app.js"></script>
+    <!-- Strava Best Efforts App -->
+    <script src="assets/js/app.js"></script>
 
-  <script>
-  var AdminLTEOptions = {
-    BSTooltipSelector: "[data-toggle='tooltip']",
-    enableControlSidebar: false,
-    enableFastclick: true,
-  };
+    <script>
+      var AdminLTEOptions = {
+        BSTooltipSelector: "[data-toggle='tooltip']",
+        enableControlSidebar: false,
+        enableFastclick: true,
+      };
 
-  $(document).ready(function() {
-    loadOverview();
-  });
-  $(".reload-app").click(function() {
-    window.location.reload();
-  });
-  $("a[id^='best-effort-']").click(function() {
-    loadDistanceView($(this));
-  });
-  $("a[id^='best-effort-']").dblclick(function(e) {
-    e.preventDefault();
-  })
-  $('img[data-failover]').error(function(){
-    var failover = $(this).data('failover');
-    if (this.src != failover){
-      this.src = failover;
-    }
-  });
-  </script>
-</body>
-</html>
+      $(document).ready(function() {
+        loadOverview();
+      });
+      $(".reload-app").click(function() {
+        window.location.reload();
+      });
+      $("a[id^='best-effort-']").click(function() {
+        loadDistanceView($(this));
+      });
+      $("a[id^='best-effort-']").dblclick(function(e) {
+        e.preventDefault();
+      })
+      $('img[data-failover]').error(function(){
+        var failover = $(this).data('failover');
+        if (this.src != failover){
+          this.src = failover;
+        }
+      });
+    </script>
+  </body>
+  </html>
