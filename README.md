@@ -1,11 +1,16 @@
 # Strava Best Efforts
 
-**NOTE**
+---
+
+## NOTE
+
 I'm rewriting this app using Ruby on Rails and can be accessed at http://strafforts.yizeng.me. It's only just work in progress, so it's not open sourced yet, the Heroku server only starts when someone visits the app and the worker process only run once a day in order to minimize any costs.
 
-It means the app will take a while to load if it's been inactive for more than 30 minutes and after connect with Strava, the data won't pulled from Strava until the next day.
+It means the new app will take a while to load if it's been inactive for more than 30 minutes and after connect with Strava, the data won't pulled from Strava until the next day.
 
-It's welcomed and much appreciated if you want to have a play around and help testing it.
+It's welcomed and much appreciated if you want to have a play around and help me testing it.
+
+----
 
 This small app fetches Strava running best efforts using Strava API,
 then fires up a webpage to visualize the best efforts data,
