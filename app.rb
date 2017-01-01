@@ -61,11 +61,16 @@ if options[:fetch]
     # For each activity id, retrieve activity json, then parse it.
     # If it has valid best effort items, append them to the result file.
     activity_ids = api_client.get_all_best_effort_activity_ids
+    acc = []
     activity_ids.sort.each do |activity_id|
       activity_json = api_client.retrieve_an_activity(activity_id)
       results = StravaBestEfforts::Fetcher::BestEffortParser.parse(activity_json, config.maximum_pr_rank)
-      best_efforts_writer.append_results(results)
+      results.each do |result|
+        acc << result
+      end
     end
+    acc = acc.sort_by { |somet| somet['start_date'].to_s }
+    best_efforts_writer.append_results(acc)
 
   rescue Exception => e
     $logger.error e.message
